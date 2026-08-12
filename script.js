@@ -46,3 +46,15 @@ contactForm.addEventListener('submit', (e) => {
 closePopup.addEventListener('click', () => {
     popupModal.style.display = 'none';
 });
+
+const container = document.querySelector('#proyek-container')
+
+proyek.forEach((item) => {
+  const card = document.createElement('div')
+  card.className = 'project-card'
+  card.innerHTML = `
+    <h3>${item.judul}</h3>
+    <p>${item.deskripsi}</p>
+  `
+  container.appendChild(card)
+})
