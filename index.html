@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dzikra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image1.png" alt="Foto Profil" class="logo-image">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak" class="btn">Kontak</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" type="button">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div id="beranda" class="main-container"> 
+        <div class="hero-card">
+            <img src="image1.png" alt="Foto Profil" class="profile-image"> 
+            <div class="hero-text">
+                <h1 class="main-title">Muhammad Adz Dzikra</h1> 
+                <h2 class="sub-title">Mahasiswa Prodi Informatika</h2>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="tentang" class="portfolio-container"> 
+        <p class="description"> 
+            Halo! Saya Mahasiswa yang tertarik pada embedded system yaitu hal-hal yang berkaitan dengan pengembangan Internet of Things (IoT). 
+        </p> 
+        <hr> 
+        <ul class="skills-list" id="skills-container"> 
+        </ul>
+
+        <div class="social-links"> 
+            <img src="2227.jpg" alt="Instagram" class="icon-instagram"> 
+            <a href="https://instagram.com" target="_blank">instagram</a> 
+        </div> 
+        <br> 
+    </div>
+
+    <div id="kontak" class="contact-container">
+        <h2 class="sub-title">Hubungi Saya</h2>
+        <form id="contact-form">
+            <input type="email" id="email-input" placeholder="Masukkan email Anda..." required>
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+    </div>
+
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="sub-title">Terima Kasih!</h2>
+            <p>Email Anda telah berhasil kami terima.</p>
+            <button id="close-popup" class="btn">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
